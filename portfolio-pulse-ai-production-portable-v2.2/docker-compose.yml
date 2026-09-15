@@ -1,0 +1,16 @@
+services:
+  portfolio-pulse:
+    build: .
+    container_name: portfolio-pulse-ai
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "8787:8787"
+    volumes:
+      - ./data:/app/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
