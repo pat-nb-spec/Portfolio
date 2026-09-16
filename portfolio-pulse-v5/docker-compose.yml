@@ -1,8 +1,0 @@
-services:
-  portfolio-pulse:
-    build: .
-    ports:
-      - "8787:8787"
-    env_file:
-      - .env
-    restart: unless-stopped
