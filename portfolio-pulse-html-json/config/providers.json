@@ -1,1 +1,0 @@
-{"price":{"order":["twelve_data","finnhub","alpha_vantage"],"fallback":"last_known_cache"},"news":{"order":["alpha_vantage_news","newsapi","finnhub_news","rss"],"merge":true,"dedupe":true},"research":{"order":["seeking_alpha_public","licensed_aggregator","rss"],"subscriberPaywallBypass":false}}
